@@ -1,10 +1,135 @@
-h1, h2 {
-    padding-top: 70px;
+html {
+    font-family: "Open Sans";
+    font-weight: 400;
 }
+
+body > .container {
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+
+body > .navbar {
+    z-index: 0;
+}
+
+.navbar .the-mini-logo {
+    margin-top: -5px;
+}
+
+
+.jumbotron {
+    position: relative;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+}
+
+.jumbotron .the-logo {
+    max-width: 100%;
+    margin-right: 50px;
+}
+
+.jumbotron h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.jumbotron h2 {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron h1 {
+        font-size: 63px;
+        margin-top: 114px;
+    }
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+    .the-logo {
+        float: left;
+    }
+}
+
+@media (min-height: 480px) {
+    .jumbotron {
+        margin-top: 105px;
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-height: 640px) {
+    .jumbotron {
+        margin-top: 55px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-height: 768px) {
+    .jumbotron {
+        margin-top: 105px;
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-height: 640px) and (min-width: 1200px) {
+    .jumbotron {
+        margin-top: 115px;
+        margin-bottom: 145px;
+    }
+}
+
+
+
+.the-palmier {
+    background-color: #EFEFEF;
+    background-image: url('../img/palmier.jpg');
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
 
 .the-map {
     display: block;
     width: 100%;
-    height: 450px;
+    height: 300px;
     border: 0px none;
+}
+
+@media (min-height: 640px) {
+    .the-map {
+        height: 450px;
+    }
+}
+
+
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url("http://themes.googleusercontent.com/static/fonts/opensans/v7/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
 }
