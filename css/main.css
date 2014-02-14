@@ -8,9 +8,13 @@ h1, h2 {
     font-weight: 300;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 
 body > .navbar {
-    z-index: 0;
+    z-index: 1;
 }
 
 .navbar .the-mini-logo {
@@ -84,12 +88,20 @@ body > .navbar {
 }
 
 
-
 .the-palmier {
     background-color: #EFEFEF;
     background-image: url('../img/palmier.jpg');
     background-repeat: no-repeat;
     height: 400px;
+}
+
+
+.contact h2 {
+    border-bottom: 2px solid #6a9e41;
+}
+
+.contact-tel a {
+    font-family: verdana;
 }
 
 
