@@ -1,4 +1,4 @@
-html {
+body {
     font-family: "Open Sans";
     font-weight: 400;
 }
@@ -6,11 +6,6 @@ html {
 h1, h2 {
     font-family: 'Open Sans';
     font-weight: 300;
-}
-
-.container h1[id],
-.container h2[id] {
-    padding-top: 70px;
 }
 
 a:hover {
@@ -123,6 +118,50 @@ body > .navbar {
     }
 }
 
+aside {
+    display: inline-block;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #474d5d;
+    color: white;
+}
+
+.anchor {
+    position: relative;
+    top: -70px;
+}
+
+.plane {
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.plane h1 {
+    font-size: 30px;
+    line-height: 92px;
+    text-align: center;
+    color: #226534;
+    font-variant: small-caps;
+    background: url('../img/h1.png') no-repeat scroll center center transparent;
+}
+
+@media (min-width: 768px) {
+    .plane h1 {
+        font-size: 40px;
+        line-height: 92px;
+    }
+}
+
+.élagage {
+    background-color: #E8EAEF;
+    background-color: #1474A3;
+    color: #777;
+    color: white;
+}
+
+.élagage h1 {
+    color: white;
+}
 
 @font-face {
     font-family: "Open Sans";
