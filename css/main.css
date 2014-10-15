@@ -14,7 +14,7 @@ a:hover {
 
 
 body > .navbar {
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar .the-mini-logo {
@@ -95,6 +95,34 @@ body > .navbar {
     height: 400px;
 }
 
+.the-elagueur {
+    background-color: #EFEFEF;
+    background-image: url('../img/elagueur.jpg');
+    background-repeat: no-repeat;
+    float: right;
+    height: 400px;
+    width: 300px;
+    margin-left: 10px;
+    display: none;
+}
+
+.the-broyeur {
+    background-color: #EFEFEF;
+    background-image: url('../img/broyeur.jpg');
+    background-repeat: no-repeat;
+    float: right;
+    height: 264px;
+    width: 320px;
+    margin-left: 10px;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .the-elagueur, .the-broyeur {
+        display: block;
+    }
+}
+
 
 .contact h2 {
     border-bottom: 2px solid #6a9e41;
@@ -145,6 +173,12 @@ aside {
     background: url('../img/h1.png') no-repeat scroll center center transparent;
 }
 
+.plane h1 small {
+    display: block;
+    position: relative;
+    top: -20px;
+}
+
 @media (min-width: 768px) {
     .plane h1 {
         font-size: 40px;
@@ -152,15 +186,23 @@ aside {
     }
 }
 
-.élagage {
+.élagage, .débroussaillement-et-remise-en-état {
     background-color: #E8EAEF;
     background-color: #1474A3;
     color: #777;
     color: white;
 }
 
-.élagage h1 {
+.élagage h1, .débroussaillement-et-remise-en-état h1 {
     color: white;
+}
+
+.the-échentillon-haies-artificielles {
+    background-image: url('../img/haies-artificielles.jpg');
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+    height: 270px;
+    width: 100%;
 }
 
 @font-face {
