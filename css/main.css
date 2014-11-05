@@ -152,6 +152,7 @@ aside {
     margin-top: 20px;
     background-color: #474d5d;
     color: white;
+    max-width: 60em;
 }
 
 .anchor {
